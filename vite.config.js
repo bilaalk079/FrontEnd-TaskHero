@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5000', // replace with your backend port
+        target: 'https://backend-taskhero-1.onrender.com', // replace with your backend port
         changeOrigin: true,
         secure: false,
       },
