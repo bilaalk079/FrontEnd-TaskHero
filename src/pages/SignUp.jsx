@@ -31,7 +31,7 @@ const SignUp = () => {
     } else {
       setLoading(true);
       try {
-        const res = await axios.post("/api/auth/signup", {
+        const res = await axios.post("https://backend-taskhero-1.onrender.com/api/auth/signup", {
           email: newUser.email,
           username: newUser.username,
           password: newUser.password,

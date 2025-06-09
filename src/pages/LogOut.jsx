@@ -10,7 +10,7 @@ const LogOut = () => {
     useEffect(() => {
         const handleLogout = async () => {
             try{
-             await axios.post('http://localhost:5000/api/auth/logout', {}, { withCredentials: true });
+             await axios.post('https://backend-taskhero-1.onrender.com/api/auth/logout', {}, { withCredentials: true });
              logout()
              navigate('/login')
             }catch (err){

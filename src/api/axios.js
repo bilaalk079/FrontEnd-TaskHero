@@ -2,7 +2,7 @@ import axios from "axios";
 import useAuthStore from "../store/authStore";
 
 const api = axios.create({
-    baseURL:'https://backend-taskhero-1.onrender.com',
+    baseURL:'https://backend-taskhero-1.onrender.com/api',
     withCredentials:true,
 })
 

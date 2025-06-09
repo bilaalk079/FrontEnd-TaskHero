@@ -28,7 +28,7 @@ const LogIn = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://backend-taskhero-1.onrender.com/api/auth/login",
         {
           email: user.email,
           password: user.password,
