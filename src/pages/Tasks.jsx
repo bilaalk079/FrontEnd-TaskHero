@@ -124,13 +124,13 @@ const Tasks = () => {
       </div>
       <div className="flex">
         <button
-          className="text-white font-bold flex text-2xl p-2 rounded-xl cursor-pointer m-3 bg-slate-800 hover:bg-slate-700"
+          className="text-white font-bold flex text-2xl p-2 rounded-xl cursor-pointer my-3 mx-1 bg-slate-800 hover:bg-slate-700"
           onClick={() => setFilterModal(false)}
         >
           <span> Filters </span>
           <FaFilter />
         </button>
-        <span className="text-white text-2xl font-bold my-5 mx-2">|</span>
+        <span className="text-white text-2xl font-bold my-5 mx-1">|</span>
         <h1 className="text-xl my-3  p-2 font-bold text-white ">Sort:</h1>
         <select
           onChange={(e) => setSortOrder(e.target.value)}
