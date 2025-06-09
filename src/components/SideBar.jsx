@@ -12,7 +12,7 @@ const SideBar = () => {
     <div className={isMobileSidebarOpen ? "h-screen" : "flex"}>
       
       <div
-        className={`lg:w-[15%]  min-h-screen  p-8 bg-slate-950 fixed  top-0 left-0 h-full z-50 transition-all ${
+        className={`lg:w-[15%]  min-h-screen  p-5 bg-slate-950 fixed  top-0 left-0 h-full z-50 transition-all ${
           isMobileSidebarOpen ? "translate-x-0 w-[60%]" : "-translate-x-full"
         } lg:translate-x-0`}
       >
