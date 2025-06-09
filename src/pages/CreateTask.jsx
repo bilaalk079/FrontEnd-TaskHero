@@ -62,7 +62,7 @@ setLoading(false)
 
   };
   return (
-    <div className="flex justify-center items-center min-h-screen ml-7">
+    <div className="flex justify-center lg:items-center min-h-screen ml-7">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}

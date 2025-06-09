@@ -106,7 +106,7 @@ const Tasks = () => {
 
   return (
     <div className="w-full ">
-      <div className="flex justify-between items-center p-2 w-full fixed top-0 mt-12 bg-slate-950">
+      <div className="flex justify-between items-center p-2 w-full -mt-7 bg-slate-950">
         <motion.a
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
