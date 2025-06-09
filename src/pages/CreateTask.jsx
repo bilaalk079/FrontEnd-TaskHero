@@ -77,7 +77,7 @@ setLoading(false)
         )}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full"
 >
-          <div className="bg-slate-950 p-8 rounded-2xl shadow-lg w-full max-w-sm lg:min-w-lg">
+          <div className="bg-slate-950 p-8 rounded-2xl shadow-lg w-full max-w-md lg:min-w-lg">
             <a href="/dashboard" className="text-indigo-600 hover:underline">
               <FiArrowLeft size={18} />
             </a>
