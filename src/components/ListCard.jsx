@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const ListCard = ({ title, status, category, handleStatusToggle, taskId }) => {
+const ListCard = ({ title, status, category, handleStatusToggle, taskId, handleDelete, handleEdit }) => {
   const properStatus = status.charAt(0).toUpperCase() + status.slice(1);
   const properCategory = category.charAt(0).toUpperCase() + category.slice(1);
   const getStatusIcon = (status) => {
@@ -65,6 +65,7 @@ const ListCard = ({ title, status, category, handleStatusToggle, taskId }) => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={handleEdit}
               className="px-4 py-2 text-sm font-bold text-white rounded-lg cursor-pointer bg-blue-600 hover:opacity-90 transition duration-300"
               aria-label="Edit task"
             >
@@ -72,6 +73,7 @@ const ListCard = ({ title, status, category, handleStatusToggle, taskId }) => {
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
+              onClick={handleDelete}
               whileTap={{ scale: 0.95 }}
               className="px-4 py-2 text-sm font-bold text-white rounded-lg cursor-pointer bg-red-600 hover:opacity-90 transition duration-300"
               aria-label="Delete task"

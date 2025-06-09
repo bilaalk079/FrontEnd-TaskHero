@@ -15,9 +15,12 @@ const TaskCard = ({
   category,
   taskId,
   handleStatusToggle,
+  handleDelete,
+  handleEdit
 }) => {
   const properStatus = Status.charAt(0).toUpperCase() + Status.slice(1);
   const properCategory = category.charAt(0).toUpperCase() + category.slice(1);
+  
   const getStatusIcon = (status) => {
     switch (status.toLowerCase()) {
       case "completed":
@@ -61,6 +64,7 @@ const TaskCard = ({
       <div className="flex gap-4 p-2  justify-end items-end">
         <motion.button
           whileHover={{ scale: 1.05 }}
+          onClick={handleEdit}
           whileTap={{ scale: 0.95 }}
           className=" px-5 p-2 text-sm font-bold text-white rounded-lg cursor-pointer bg-blue-600 hover:opacity-90 transition duration-300"
         >
@@ -69,6 +73,7 @@ const TaskCard = ({
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={handleDelete}
           className=" px-5 p-2 text-sm font-bold text-white rounded-lg cursor-pointer bg-red-600 hover:opacity-90 transition duration-300"
         >
           <FaTrashAlt />

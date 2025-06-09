@@ -19,30 +19,33 @@ api.interceptors.response.use(
   async err => {
     const originalRequest = err.config;
 
-    if ((err.response?.status === 401 || err.response?.status === 403) && !originalRequest._retry) {
+    if (
+      (err.response?.status === 401 || err.response?.status === 403) &&
+      !originalRequest._retry &&
+      !originalRequest.url.includes("/auth/refresh")
+    ) {
       originalRequest._retry = true;
+
       try {
         const res = await api.get('/auth/refresh');
-
         const newAccessToken = res.data.accessToken;
+
         useAuthStore.getState().setAccessToken(newAccessToken);
 
-        // Update the failed request with new token
+        // Retry original request with new token
         originalRequest.headers['Authorization'] = `Bearer ${newAccessToken}`;
-
-        // Retry original request
         return api(originalRequest);
       } catch (refreshErr) {
-        // If refresh also fails, force logout
+        console.error("Refresh token failed. Logging out...");
         useAuthStore.getState().logout();
-        return Promise.reject(refreshErr); // Let app logic handle if needed
+        return Promise.reject(refreshErr);
       }
     }
 
-    // Not a token-related error
     return Promise.reject(err);
   }
 );
+
 
 
    export default api
