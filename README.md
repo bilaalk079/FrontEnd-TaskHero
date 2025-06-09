@@ -11,6 +11,7 @@ TaskHero Frontend is the user interface for the TaskHero app – a modern, respo
 - 🗃️ Categorize tasks  
 - 🔍 View all tasks in a dashboard  
 - 📅 Calendar view (under development)  
+- Due Dates (under development)
 - 📱 Mobile responsive design  
 - 💬 Motivational quotes on the dashboard  
 
