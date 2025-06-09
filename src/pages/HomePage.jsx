@@ -113,25 +113,25 @@ const HomePage = () => {
           </h1>
           <div className="flex lg:flex-row flex-col justify-between  items-center p-2">
             <ul className="m-5">
-              <li className="text-xl lg:text-2xl m-5 font-bold text-indigo-500">
+              <li className="text-lg lg:text-2xl m-5 font-bold text-indigo-500">
                 ⚡. Task Management
               </li>
-              <li className="text-xl lg:text-2xl m-5 font-bold text-indigo-500">
+              <li className="text-lg lg:text-2xl m-5 font-bold text-indigo-500">
                 ⚡. Task Status Tracking
               </li>
-              <li className="text-xl lg:text-2xl m-5 font-bold text-indigo-500">
+              <li className="text-lg lg:text-2xl m-5 font-bold text-indigo-500">
                 ⚡. Task Prioritization
               </li>
-              <li className="text-xl lg:text-2xl m-5 font-bold text-indigo-500">
+              <li className="text-lg lg:text-2xl m-5 font-bold text-indigo-500">
                 ⚡. Task Categorization
               </li>
-              <li className="text-xl lg:text-2xl m-5 font-bold text-indigo-500">
+              <li className="text-lg lg:text-2xl m-5 font-bold text-indigo-500">
                 ⚡. Advanced Sorting
               </li>
-              <li className="text-xl lg:text-2xl m-5 font-bold text-indigo-500">
+              <li className="text-lg lg:text-2xl m-5 font-bold text-indigo-500">
                 ⚡. Calendar Integration
               </li>
-              <li className="text-xl lg:text-2xl m-5 font-bold text-indigo-500">
+              <li className="text-lg lg:text-2xl m-5 font-bold text-indigo-500">
                 ⚡. Powerful Filtering
               </li>
             </ul>

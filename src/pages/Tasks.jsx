@@ -130,11 +130,11 @@ const Tasks = () => {
           <span> Filters </span>
           <FaFilter />
         </button>
-        <span className="text-white text-2xl font-bold my-5 mx-2"> || </span>
-        <h1 className="text-2xl my-3  p-2 font-bold text-white ">Sort:</h1>
+        <span className="text-white text-2xl font-bold my-5 mx-2">|</span>
+        <h1 className="text-xl my-3  p-2 font-bold text-white ">Sort:</h1>
         <select
           onChange={(e) => setSortOrder(e.target.value)}
-          className="rounded-2xl lg:p-3 bg-slate-800 text-white sm:p-1 my-3 sm:mx-0 lg:mx-1"
+          className="rounded-2xl lg:p-3 bg-slate-800 text-white sm:p-0 my-3 sm:mx-0 lg:mx-1"
         >
           <option value="desc">Priority: High to Low</option>
           <option value="asc">Priority: Low to High</option>
