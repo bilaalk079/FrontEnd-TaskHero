@@ -62,20 +62,22 @@ setLoading(false)
 
   };
   return (
-    <div className="flex justify-center min-h-screen ml-7">
+    <div className="flex justify-center min-h-screen px-4">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col lg:flex-row  justify-center px-4 gap-8"
+        className="flex flex-col lg:flex-row justify-center px-4 gap-8"
+
       >
         {loading && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950 bg-opacity-90">
             <ClipLoader color="#6366f1" size={80} />
           </div>
         )}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
-          <div className="bg-slate-950 p-8 rounded-2xl shadow-lg w-full lg:min-w-lg">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full"
+>
+          <div className="bg-slate-950 p-8 rounded-2xl shadow-lg w-full max-w-sm lg:min-w-lg">
             <a href="/dashboard" className="text-indigo-600 hover:underline">
               <FiArrowLeft size={18} />
             </a>
