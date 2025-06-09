@@ -62,12 +62,12 @@ setLoading(false)
 
   };
   return (
-    <div className="flex justify-center lg:items-center min-h-screen ml-7">
+    <div className="flex justify-center min-h-screen ml-7">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col lg:flex-row items-center justify-center px-4 gap-8"
+        className="flex flex-col lg:flex-row  justify-center px-4 gap-8"
       >
         {loading && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950 bg-opacity-90">
