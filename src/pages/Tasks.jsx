@@ -202,7 +202,7 @@ const Tasks = () => {
 
       {tasks.length > 0 ? (
         cardView ? (
-          <div className="grid grid-cols-1 lg:grid-cols-3  justify-center items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3  justify-between items-center">
             {tasks.map((task) => (
               <TaskCard
                 key={task._id}
