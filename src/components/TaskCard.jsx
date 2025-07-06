@@ -35,7 +35,7 @@ const TaskCard = ({
     window.location.href = `/dashboard/tasks/${taskId}`;
   };
   return (
-    <div className="lg:min-w-84 bg-slate-950 text-white shadow-2xl p-6 rounded-2xl flex flex-col m-3  lg:h-84 gap-4 hover:scale-[1.02] transition-transform duration-200 ">
+    <div className="lg:min-w-84 bg-slate-950 text-white shadow-2xl p-5 rounded-2xl flex flex-col m-4  lg:h-84 gap-4 hover:scale-[1.02] transition-transform duration-200 ">
       <h1
         onClick={handleSingleTask}
         className="font-extrabold lg:text-3xl sm:text-2xl tracking-wide underline underline-offset-4 line-clamp-1 cursor-pointer hover:text-blue-300"
